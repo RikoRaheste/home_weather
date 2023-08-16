@@ -11,7 +11,7 @@ csv_file_path = 'home_weather_data.csv'
 weather_data = []
 
 if not os.path.exists(csv_file_path):
-    df = pd.DataFrame(columns=["time", "wind_kph", "temp_c", "humidity", "daily_chance_of_rain"])
+    df = pd.DataFrame(columns=["time", "temp_c", "wind_kph",  "humidity"])
     df.to_csv(csv_file_path, index=False)
 
 # Request weather data and store/return it as a library
